@@ -14,7 +14,8 @@ body {
     background-color: #FAFAFA;
     color: #8B8B8B;
     text-align: center;
-    padding: 20px;
+    margin: 0;
+    padding: 20px 0;
 }
 
 h1 {
@@ -29,8 +30,9 @@ h2 {
 }
 
 p {
-    display: block;
-    max-width: 460px;
+    margin: 0 20px;
+    display: inline;
+    max-width: 550px;
 }
 
 .tlacitko {
@@ -61,7 +63,7 @@ p {
     display: block;
 }
 
-.blok {
+.bublina {
     display: flex;
     font: normal normal 13px montserrat;
     color: #8B8B8B;
@@ -82,27 +84,27 @@ p {
     text-align: center;
 }
 
-.ctverec {
-    display: inline-block
+.blok {
+    display: inline-block;
 }
+
 
 @media screen and (min-width:640px) {
     body {
-        padding: 0 110px;
+        margin: 0 110px;
     }
 
-    .blok {
-        display: flex;
-        flex-direction: column;
-        flex-basis: calc((100% / 3)-(80 / 4));
+    .bublina {
         font: normal normal 13px montserrat;
         color: #8B8B8B;
         background-color: #ffffff;
         border-radius: 20px;
-        width: 230px;
-        height: 170px;
+        width: auto;
+        height: auto;
         box-shadow: 0 4px 6px;
         margin: 15px;
+        flex-direction: column;
+        align-items: center;
     }
 
     .box {
@@ -113,11 +115,10 @@ p {
     .mini {
         width: 45px;
         height: 40px;
-        margin-top: 10px;
-        margin-left: 90px;
+        margin: 40px 0 0 0;
     }
 
-    .ctverec {
+    .blok {
         padding: 10px;
         display: flex;
         justify-content: center;
@@ -128,10 +129,10 @@ p {
     }
 
     p {
-        display: inline;
         max-width: 550px;
     }
 }
+
 
 @media screen and (min-width:1100px) {
 
@@ -182,5 +183,7 @@ p {
     .delegati {
         max-width: 550px;
         margin: 0;
+
     }
+
 }
